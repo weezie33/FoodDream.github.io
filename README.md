@@ -1,6 +1,8 @@
 # FoodDream.github.io
 
 <strong>EOB - Wed 27 March 2019</strong>
+<br>
+<p>
 Brainstorm possible ideas
 Begin API research
 Create an initial draft / sketch of the final design
@@ -12,3 +14,4 @@ Create an initial draft / sketch of the final design
   <ls>APIs to be used</ls>
   <ls>Rough breakdown of tasks</ls>
  <ul>
+</p>
