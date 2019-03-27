@@ -13,4 +13,6 @@
      * - [ ] Sketch of final product
      * - [ ] APIs to be used
      * - [ ] Rough breakdown of tasks
+
+Note: The one page paper can be found here "https://docs.google.com/document/d/16WlXv-xidykcz1w9hmNjAa4uBEpy6JF66ku0SQdypJk/edit?usp=sharing"
 </p>
