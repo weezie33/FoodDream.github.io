@@ -2,8 +2,7 @@
 
 # Due Outs#
 <strong>EOB - Wed 27 March 2019</strong>
-<br>
-Markup :  
+<br> 
 * Brainstorm possible ideas
 * Begin API research
 * Create an initial draft / sketch of the final design
@@ -13,8 +12,8 @@ Markup :
      * Project description
      * Sketch of final product
      * APIs to be used
-     * Rough breakdown of tasks
+     * - [x] Rough breakdown of tasks
 </p>
 # Tasks#
-  Markup : - [ ] An uncompleted task
-          - [x] A completed task
+- [ ] An uncompleted task
+- [x] A completed task
