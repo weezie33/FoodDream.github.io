@@ -1,13 +1,14 @@
 # FoodDream.github.io
 
-EOB - Wed 27March
-  brain storm possible ideas
-  begin API researdch
-  create an intitial draft / sketch of the final design
-  Create a short 1 page proposa listing out eacxh of the following
-    project title
-    team members
-    project descriton
-    sketch of final product
-    APIs to be used
-    Rough breakdown of tasks
+<strong>EOB - Wed 27 March 2019</strong>
+Brainstorm possible ideas
+Begin API research
+Create an initial draft / sketch of the final design
+<ul>Create a short 1 page proposal listing out each of the following
+  <ls>Project title</ls>
+  <ls>Team members</ls>
+  <ls>Project description</ls>
+  <ls>Sketch of final product</ls>
+  <ls>APIs to be used</ls>
+  <ls>Rough breakdown of tasks</ls>
+ <ul>
