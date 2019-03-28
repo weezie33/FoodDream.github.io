@@ -2,6 +2,7 @@ html, body {
     height: 100%;
     background-color:#030001;
 }
+
 .navbar{
     width: 100%;
     height: 100px;
@@ -12,7 +13,6 @@ html, body {
 
 #navcontainer{
     width: 1200px;
-
     /* border-bottom: 8px solid #2d87ee; */
 }
 
