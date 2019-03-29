@@ -1,3 +1,4 @@
+ 
 // initial testing
 $("#add-art").on("click", function (event) {
     event.preventDefault();
@@ -19,19 +20,16 @@ $("#add-art").on("click", function (event) {
         $("#searchDump").text("");
         for (let i = 0; i < obj.track_list.length; i++) {
 
-            let newDiv = $("<div>")
+            var  newDiv = $("<div>");
+           
             newDiv.append(
-                $("<ul>"),
-                $("<li>").text("Track Name: " + obj.track_list[i].track.track_name),
-                $("<li>").text("Artist Name: " + obj.track_list[i].track.artist_name),
-                $("</ul>")
+                $("<p>").text("Track Name: " + obj.track_list[i].track.track_name),
+                $("<p>").text("Artist Name: " + obj.track_list[i].track.artist_name),
             )
-
-            newDiv.css("background-color", "blue");
+            newDiv.addClass("output");
             // $("#searchDump").append(JSON.stringify("Track Name " + obj.track_list[i].track.track_name + " Artist Name " + obj.track_list[i].track.artist_name))
-
-
-            $("#searchDump").append(newDiv);
+            
+            $("#searchDump").append(newDiv)
         }
 
         console.log(obj);
@@ -40,3 +38,14 @@ $("#add-art").on("click", function (event) {
 
     console.log(lyricInput);
 })
+$(".output").on ("click", function( event   )   {
+
+    event.preventDefault();
+    
+
+
+
+
+})
+
+
