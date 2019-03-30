@@ -28,9 +28,9 @@ $("#add-art").on("click",function(event){
 })
 
 
-const tracksTemplateSource = document.getElementById('tracks-template').innerHTML;
-const tracksTemplate = Handlebars.compile(tracksTemplateSource);
-const $tracks = $('#musicplay');
+// const tracksTemplateSource = document.getElementById('tracks-template').innerHTML;
+// const tracksTemplate = Handlebars.compile(tracksTemplateSource);
+// const $tracks = $('#musicplay');
 
 // $(document).on("click", ".options", function () {
 
