@@ -17,7 +17,20 @@ $("#add-art").on("click",function(event){
         let parsed = JSON.parse(response);
         let obj = parsed.message.body;
         for(let i = 0; i <obj.track_list.length; i++){
-            $("#searchDump").append(JSON.stringify("trackname "+obj.track_list[i].track.track_name+" Artist Name "+obj.track_list[i].track.artist_name ))
+            var  newDiv = $("<div>");
+            newDiv.append(
+            newDiv.append(
+                $("<ul>"),
+                $("<p>").text("Track Name: " + obj.track_list[i].track.track_name),
+                $("<li>").text("Track Name: " + obj.track_list[i].track.track_name),
+                $("<p>").text("Artist Name: " + obj.track_list[i].track.artist_name),
+                $("<li>").text("Artist Name: " + obj.track_list[i].track.artist_name),
+                $("</ul>")
+            )
+            )
+            newDiv.addClass("output");
+            $("#searchDump").append(newDiv)
+
         }
         
         console.log(obj);
