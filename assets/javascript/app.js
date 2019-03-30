@@ -39,26 +39,26 @@ $("#add-art").on("click",function(event){
 // })
 
 
-function firstCall(value) {
-    $.ajax({
-        url: "https://api.napster.com/v2.2/search?apikey=OWI1YTkyYTctMDRjNC00YjgzLWE2ODItYTZkMzFmNzFmMGQy&query=" + value + "&type=track",
-        method: "GET",
-    }).done(function (response) {
-        let id = response.search.order[0];
-        secondCall(id);
-    })
-}
+// function firstCall(value) {
+//     $.ajax({
+//         url: "https://api.napster.com/v2.2/search?apikey=OWI1YTkyYTctMDRjNC00YjgzLWE2ODItYTZkMzFmNzFmMGQy&query=" + value + "&type=track",
+//         method: "GET",
+//     }).done(function (response) {
+//         let id = response.search.order[0];
+//         secondCall(id);
+//     })
+// }
 
-function secondCall(track) {
-    $.ajax({
-        url: "https://api.napster.com/v2.2/tracks/" + track + "?apikey=OWI1YTkyYTctMDRjNC00YjgzLWE2ODItYTZkMzFmNzFmMGQy",
-        method: "GET"
-    }).then(function (response) {
-        $tracks.html(tracksTemplate(response));
-    })
+// function secondCall(track) {
+//     $.ajax({
+//         url: "https://api.napster.com/v2.2/tracks/" + track + "?apikey=OWI1YTkyYTctMDRjNC00YjgzLWE2ODItYTZkMzFmNzFmMGQy",
+//         method: "GET"
+//     }).then(function (response) {
+//         $tracks.html(tracksTemplate(response));
+//     })
 
-}
+// }
 
-firstCall("Say it aint so");
+// firstCall("Say it aint so");
 
 
