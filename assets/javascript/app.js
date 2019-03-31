@@ -2,12 +2,12 @@
 let apikey =  	"&apikey=2ff458e3e36ac3751209b898369ec5bd";
 
 let tracksearch = "track.search?q="
-$("#add-art").on("click",function(event){
+$("#add-music").on("click",function(event){
     event.preventDefault();
     
-    let searchInput = $("#art-show").val().trim();
+    let searchInput = $("#music-show").val().trim();
     let baseUrl = "https://cors-anywhere.herokuapp.com/http://api.musixmatch.com/ws/1.1/track.search?format=json&q="+searchInput+"&callback=jsonp&quorum_factor=1&apikey=2ff458e3e36ac3751209b898369ec5bd"
-    $("#art-show").val("")
+    $("#music-show").val("")
 
 
     $.ajax({
@@ -30,13 +30,9 @@ $("#add-art").on("click",function(event){
             )
             newDiv.addClass("output");
             $("#searchDump").append(newDiv)
-
         }
-        
         console.log(obj);
     })
-
-
     console.log(searchInput);
 })
 
@@ -73,5 +69,3 @@ $("#add-art").on("click",function(event){
 // }
 
 // firstCall("Say it aint so");
-
-
