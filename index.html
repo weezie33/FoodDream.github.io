@@ -35,16 +35,17 @@
 <!-- END Head -->
 
 <body>
+<!-- <div id="backgroundwrapper"> -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="mainnavbar">
     <div class="navbar container col-6" id="navcontainer">
         <a class="navbar-brand fa-3x float-left" style="color: #2d87ee" href="index.html"><img src="assets/images/Lyricist.png" alt="Logo" height="75px" width="75px">  Lyricist</a>
     </div>
     <div class="topnav float-right" id="myTopnav">
         <div class="navbardropdown"><span></span> 
-        <a href="search.html"><i class="fa fa-fw fa-search" style="color: #2d87ee"></i> Search</a> 
-        <a href="about.html"><i class="fa fa-fw fa-info" style="color: #2d87ee"></i>  About</a>
-        <a href="contact.html"><i class="fa fa-fw fa-envelope" style="color: #2d87ee"></i> Contact</a> 
-        <a href="login.html"><i class="fa fa-fw fa-user" style="color: #2d87ee"></i> Login</a>
+        <a href="assets/html/header/search.html"><i class="fa fa-fw fa-search" style="color: #2d87ee"></i> Search</a> 
+        <a href="assets/html/header/about.html"><i class="fa fa-fw fa-info" style="color: #2d87ee"></i>  About</a>
+        <a href="assets/html/header/contact.html"><i class="fa fa-fw fa-envelope" style="color: #2d87ee"></i> Contact</a> 
+        <a href="assets/html/header/login.html"><i class="fa fa-fw fa-user" style="color: #2d87ee"></i> Login</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars fa-2x"></i><br><span></span> 
         </a>
@@ -59,17 +60,17 @@
             <ul class="nav nav-stacked" id="menu">
                 <ls class="nav-item" data-toggle="offcanvas-in"><a class="nav-link" href data-target="index.html" data-toggle="collapse"><i class="fa fa-home" style="color: #2d87ee"></i> <span class="collapse in hidden-xs-down">  Home <span class="caret"></span></span></a>
                 </ls>
-                <li class="nav-item"><a class="nav-link" href="music.html"><i class="fa fa-music" style="color: #2d87ee"></i> <span class="collapse in hidden-xs-down">  Music</span></a></li>
-                <li class="nav-item"><a class="nav-link" href="lyrics.html"><i class=" fa fa-fire" style="color: #2d87ee" style="color: #2d87ee"></i> <span class="collapse in hidden-xs-down">  Lyrics</span></a></li>
-                <li class="nav-item"><a class="nav-link" href="favorites.html"><i class="fa fa-heart" style="color: #2d87ee"></i><span class="collapse in hidden-xs-down">  Favorites</span></a></li>
-                <li class="nav-item"><a class="nav-link" href="playlist.html"><i class="fa fa-th-list" style="color: #2d87ee"></i><span class="collapse in hidden-xs-down">  Playlist</span></a></li>
+                <li class="nav-item"><a class="nav-link" href="assets/html/sidebar/music.html"><i class="fa fa-music" style="color: #2d87ee"></i> <span class="collapse in hidden-xs-down">  Music</span></a></li>
+                <li class="nav-item"><a class="nav-link" href="assets/html/sidebar/lyrics.html"><i class=" fa fa-fire" style="color: #2d87ee" style="color: #2d87ee"></i> <span class="collapse in hidden-xs-down">  Lyrics</span></a></li>
+                <li class="nav-item"><a class="nav-link" href="assets/html/sidebar/favorites.html"><i class="fa fa-heart" style="color: #2d87ee"></i><span class="collapse in hidden-xs-down">  Favorites</span></a></li>
+                <li class="nav-item"><a class="nav-link" href="assets/html/sidebar/playlist.html"><i class="fa fa-th-list" style="color: #2d87ee"></i><span class="collapse in hidden-xs-down">  Playlist</span></a></li>
             </ul>
         </div>
         <!-- END sidebar -->
 
         <!-- Start main -->
-        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9" id="main">
-            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9" id="main">
+        <div class="col-lg-8 col-md-9 col-sm-9 col-xs-9" id="main">
+            <div class="col-lg-8 col-md-9 col-sm-9 col-xs-9" id="submain1">
                 <div class="panel panel-primary">
                     <div class="panel-heading">
                         <h1 class="panel-title text-center">Scribble that Shit!</h1>
@@ -89,9 +90,11 @@
                     </table>
                     </div>
                 </div>
+                <hr color="#2d87ee">
             </div>
-            <hr color="#2d87ee">
-            <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 text-center" id="submain">
+            
+            <!-- <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 text-center" id="submain"> -->
+            <div class="col-lg-8 col-md-9 col-sm-9 col-xs-9 text-center" id="submain2">
                 <!-- <div class="align-content-center"> -->
                     <form id="music-form">
                         <label for="music-show"><b>
@@ -101,15 +104,17 @@
                         <input type="text" id="music-show"><br><br>
                     <!-- Button triggers new lyrics to be added -->
                         <input type="submit" id="add-music" value="Search" class="btn btn-primary"></input>
-                            <span id="lyricInput"></span></form>
-                    <div class="row" id="row">
-                        <div id="searchDump" class="col-xl-4 text-center"></div>
+                            <span id="lyricInput"></span>
+                    </form>
+                <!-- </div> -->
+            </div>
+            <div class="flex-container" id="submain3"> 
+                <!-- <div class="col-lg-8 col-md-9 col-sm-9 col-xs-9 text-center"> -->
+                    <div id="searchDump" class="text-center">
                     </div>
                 <!-- </div> -->
             </div>
-            <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 text-center" id="submain">
-                This is where the album-art can go.
-            </div>
+
         </div>
         <!-- END main -->
     </div>
@@ -122,7 +127,7 @@
     <a href="weezie33.github.io"> weezie33.github.io</a>
   </div>
 </footer>
-
+<!-- </div> -->
 
 <!-- End Footer -->
 <!-- Start JS -->
