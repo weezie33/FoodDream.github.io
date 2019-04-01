@@ -1,14 +1,14 @@
 // initial testing
 let apikey = "&apikey=2ff458e3e36ac3751209b898369ec5bd";
 
-$("#add-art").on("click", function (event) {
+$("#add-music").on("click", function (event) {
     event.preventDefault();
 
-    let lyricInput = $("#art-show").val().trim();
+    let lyricInput = $("#music-show").val().trim();
     let clueInput = "";
     let baseUrl = "https://cors-anywhere.herokuapp.com/http://api.musixmatch.com/ws/1.1/track.search?format=json&q_lyrics=" + lyricInput + "&q_track_artist=" + clueInput + "&callback=jsonp&quorum_factor=.06&f_has_lyrics=1&s_track_rating=desc&apikey=2ff458e3e36ac3751209b898369ec5bd"
     $("#art-show").val("")
-
+    $("#searchDump").empty();
 
     $.ajax({
         url: baseUrl,
@@ -29,18 +29,15 @@ $("#add-art").on("click", function (event) {
                 )
             )
             newDiv.addClass("output");
-            newDiv.attr("track",obj.track_list[i].track.track_name )
-            newDiv.attr("artist",obj.track_list[i].track.artist_name)
+            newDiv.attr("track", obj.track_list[i].track.track_name)
+            newDiv.attr("artist", obj.track_list[i].track.artist_name)
             $("#searchDump").append(newDiv)
 
 
         }
 
-        console.log(obj);
     })
 
-
-    console.log(searchInput);
 })
 
 
@@ -98,8 +95,8 @@ function secondCall(track) {
     })
 }
 
-$(document).on("click",".output",function(){
-    let track = this.attr("track");
-    let artist = this.attr("artist");
-    firstCall(track,artist);
+$(document).on("click", ".output", function () {
+    let track = $(this).attr("track");
+    let artist = $(this).attr("artist");
+    firstCall(track, artist);
 })
