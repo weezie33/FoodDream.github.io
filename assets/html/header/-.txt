@@ -1,0 +1,13 @@
+pwd (print working directory)
+mkdir (make directory)
+cd (change directory)
+cd .. (move up)
+cd ~ (go home)
+open . (Apple), explorer . (Windows)
+rm -r (remove directory) 
+
+touch
+ls (list)
+open (Apple), explorer (Windows)
+rm (remove)
+code (VSCode) atom (Atom) <file-name>
