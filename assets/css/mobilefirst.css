@@ -1,24 +1,29 @@
 html, body {
-   height: 100%;
+   height: auto;
    position: absolute;
    top: 0;
    left: 0;
    width: 100%;
    background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
-   transition: 500ms; 
+   transition: 500ms;
    /* background: radial-gradient(ellipse farthest-corner at center center, rgba(0,0,0,0.5) 20%, rgba(0,0,0,0.85) 100%) repeat scroll 0% 0%; */
    color: #f2f2f2;
    background-position: center;
    background-image: repeat-y;
    background-size: cover;
+   overflow: auto;
 }
 
 .wrapper {
    height: 100%;
+   min-height: 100%;
    margin-left:0;
    margin-right:0;
+   margin-bottom: 0px;
    padding-left:0;
    padding-right:0;
+   position: absolute;
+   
 }
 
 .row-offcanvas {
@@ -31,14 +36,14 @@ html, body {
 #sidebar {
     background: radial-gradient(ellipse farthest-corner at center center, rgba(0,0,0,0.5) 20%, rgba(0,0,0,0.85) 100%) repeat scroll 0% 0%;
     max-width: 200px; 
-    height: 100%;
-    min-height: auto;
+    height:auto;
+    min-height: 100%;
     padding: 15px;
-    overflow: hidden;
+    /* overflow: hidden; */
     -webkit-transition: width 0.3s ease-in;
     -moz-transition: width 0.3s ease-in;
     transition: width 0.3s ease-in;
-    z-index: 1;
+    z-index: 0;
     color: #f2f2f2;
     border-right: 8px solid #2d87ee;
 }
@@ -53,23 +58,24 @@ html, body {
     color: #f2f2f2;
 }
 
-/* .panel.panel.primary {
-  background-color: black;
-} */
-
 #main {
-    margin:auto;
+    margin: auto;
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
     padding: 0px;
     left: 0;
     height: auto;
     /* background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
     transition: 500ms; */
     background-color: radial-gradient(ellipse farthest-corner at center center, rgba(0,0,0,0.5) 20%, rgba(0,0,0,0.85) 100%) repeat scroll 0% 0%;
+    justify-content: center;
+    align-items: baseline;
+
+    /* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+
 }
 
-#submain {
+#submain1 {
     margin:auto;
     margin-top: 25px;
     margin-bottom:25px;
@@ -78,7 +84,7 @@ html, body {
 }
 
 #submain2 {
-    margin:50px;
+    margin:auto;
     margin-top: 25px;
     margin-bottom:25px;
     padding: 25px;
@@ -86,25 +92,36 @@ html, body {
 }
 
 #submain3 {
-    margin-left: 5px;
-    margin-right: 5px;
+    /* margin:auto;
+    float: left;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; */
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 20px;
+  height: auto;
+  /* align-content: space-between; */
 }
 
 h1 {
   padding: 5px;
-  /* color: #2d87ee; */
   margin:0px;
 }
 
-hr {
-  
+hr { 
   width: 95%;
   height: 4px;
 }
-/*
- * off canvas sidebar
- * --------------------------------------------------
- */
+
+
+/* off canvas sidebar */
+
 @media screen and (max-width: 34em) {
     #sidebar {
        min-width: 43px;
@@ -170,7 +187,6 @@ hr {
 
 /* Style the links inside the navigation bar */
 .topnav a {
-
   display: inline-block;
   color: #f2f2f2;
   text-align: center;
@@ -186,6 +202,7 @@ hr {
 .navbardropdown {
     margin-right:  20px;
 }
+
 .fa.fa-bars {
     margin-right:  100px;
     color: #2d87ee;
@@ -193,7 +210,6 @@ hr {
 }
 /* Change the color of links on hover */
 .topnav a:hover {
-
   color: white;
 }
 
@@ -233,31 +249,101 @@ hr {
   }
   #sidebar {
     max-width: 150px;
+  }
 }
-}
+
 #searchDump {
     align-content: center;
-    display: inline-block;
     margin: auto;
-    /* margin-left: 160px; */
-    margin-top: 20px;
     padding: 5px;
-    margin-block-end: 5px;
-    align-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+
 .output {
     /* background-color: deepskyblue; */
     background: radial-gradient(ellipse farthest-corner at center center, rgba(0,0,0,0.5) 20%, rgba(0,0,0,0.85) 100%) repeat scroll 0% 0%;
-    font-size: medium;
+    font-size: medium; 
+    margin: 10px;
     margin-bottom: 2%;
     padding: 5px;
     box-shadow: 13px -6px 10px 0px rgb(2, 250, 31);
+    width: 200px;
+}
 
+#music-show {
+    background-color: #f2f2f2;
+    border:  2px solid transparent; 
+    /* round the corners */
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    box-shadow: 0px 0px 10px 10px #d902fac2; 
+    -moz-box-shadow: 0px 0px 10px 10px #d902fac2;
+    -webkit-box-shadow: 0px 0px 10px 10px #d902fac2;    
+}
 
+#music-show:focus { 
+    outline: none;
+    border: 3px solid transparent; 
+    /* create a BIG glow */
+    box-shadow: 0px 0px 20px 10px #15ff00;
+    -moz-box-shadow: 0px 0px 20px 10px #15ff00;
+    -webkit-box-shadow: 0px 0px 20px 10px #15ff00;
 }
 
 .footer-copyright {
-    height: 75px;
-    margin-bottom: 0px;
-    margin-top: 0px;
+  clear: both;
+  font-size: 12px;
+  height: 75px;
+  margin-top: 100%;
+  margin-bottom: 0px;
+  
 }
+
+
+/* 
+#backgroundwrapper { 
+  width: 1680px;
+  height: 1000px;
+  left:0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: relative;
+  background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+  background-size: contain;
+
+-webkit-animation: rainbow 18s ease infinite;
+-z-animation: rainbow 18s ease infinite;
+-o-animation: rainbow 18s ease infinite;
+  animation: rainbow 18s ease infinite;}
+
+@-webkit-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-moz-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-o-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@keyframes rainbow { 
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+} */
+
+
+/* multicolor
+background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%); */
