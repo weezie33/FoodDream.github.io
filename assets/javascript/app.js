@@ -1,21 +1,12 @@
 // initial testing
 let apikey = "&apikey=2ff458e3e36ac3751209b898369ec5bd";
 
-// <<<<<<< napster-player
-let tracksearch = "track.search?q="
-$("#add-art").on("click", function (event) {
-    event.preventDefault();
-
-    let searchInput = $("#art-show").val().trim();
-    let baseUrl = "https://cors-anywhere.herokuapp.com/http://api.musixmatch.com/ws/1.1/track.search?format=json&q=" + searchInput + "&callback=jsonp&quorum_factor=1&apikey=2ff458e3e36ac3751209b898369ec5bd"
-// =======
 $("#add-art").on("click", function (event) {
     event.preventDefault();
 
     let lyricInput = $("#art-show").val().trim();
     let clueInput = "";
     let baseUrl = "https://cors-anywhere.herokuapp.com/http://api.musixmatch.com/ws/1.1/track.search?format=json&q_lyrics=" + lyricInput + "&q_track_artist=" + clueInput + "&callback=jsonp&quorum_factor=.06&f_has_lyrics=1&s_track_rating=desc&apikey=2ff458e3e36ac3751209b898369ec5bd"
-// >>>>>>> master
     $("#art-show").val("")
 
 
@@ -38,7 +29,10 @@ $("#add-art").on("click", function (event) {
                 )
             )
             newDiv.addClass("output");
+            newDiv.attr("track",obj.track_list[i].track.track_name )
+            newDiv.attr("artist",obj.track_list[i].track.artist_name)
             $("#searchDump").append(newDiv)
+
 
         }
 
@@ -50,10 +44,10 @@ $("#add-art").on("click", function (event) {
 })
 
 
-
 const tracksTemplateSource = document.getElementById('tracks-template').innerHTML;
 const tracksTemplate = Handlebars.compile(tracksTemplateSource);
 const $tracks = $('#musicplay');
+
 
 function firstCall(title, artist, album) {
     console.log(title, artist, album);
@@ -102,33 +96,10 @@ function secondCall(track) {
     }).then(function (response) {
         $tracks.html(tracksTemplate(response));
     })
-
-// <<<<<<< napster-player
 }
 
-$("#butt").click(function () {
-    firstCall("work","Rihanna",);
+$(document).on("click",".output",function(){
+    let track = this.attr("track");
+    let artist = this.attr("artist");
+    firstCall(track,artist);
 })
-
-// function firstCall(value) {
-//     $.ajax({
-//         url: "https://api.napster.com/v2.2/search?apikey=OWI1YTkyYTctMDRjNC00YjgzLWE2ODItYTZkMzFmNzFmMGQy&query=" + value + "&type=track",
-//         method: "GET",
-//     }).done(function (response) {
-//         let id = response.search.order[0];
-//         secondCall(id);
-//     })
-// }
-
-// function secondCall(track) {
-//     $.ajax({
-//         url: "https://api.napster.com/v2.2/tracks/" + track + "?apikey=OWI1YTkyYTctMDRjNC00YjgzLWE2ODItYTZkMzFmNzFmMGQy",
-//         method: "GET"
-//     }).then(function (response) {
-//         $tracks.html(tracksTemplate(response));
-//     })
-
-// }
-
-// firstCall("Say it aint so");
-// >>>>>>> master
