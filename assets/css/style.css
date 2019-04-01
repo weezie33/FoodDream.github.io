@@ -15,11 +15,11 @@ html, body {
    /* min-height: 100%; */
    margin-left:0;
    margin-right:0;
-   margin-bottom: 0px;
+   margin-bottom: 50px;
    padding-left:0;
    padding-right:0;
    height: 100%;
-   overflow: hidden;
+   overflow: auto;
 }
 
 .row-offcanvas {
@@ -277,7 +277,7 @@ hr {
 }
 
 .push {
-  height: 50px;
+  height: 75px;
 }
 
 .footer-copyright {
