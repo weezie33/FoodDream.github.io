@@ -1,38 +1,42 @@
 // initial testing
-let apikey =  	"&apikey=2ff458e3e36ac3751209b898369ec5bd";
+let apikey = "&apikey=2ff458e3e36ac3751209b898369ec5bd";
 
-let tracksearch = "track.search?q="
-$("#add-music").on("click",function(event){
+$("#add-art").on("click", function (event) {
     event.preventDefault();
-    
-    let searchInput = $("#music-show").val().trim();
-    let baseUrl = "https://cors-anywhere.herokuapp.com/http://api.musixmatch.com/ws/1.1/track.search?format=json&q="+searchInput+"&callback=jsonp&quorum_factor=1&apikey=2ff458e3e36ac3751209b898369ec5bd"
-    $("#music-show").val("")
+
+    let lyricInput = $("#art-show").val().trim();
+    let clueInput = "";
+    let baseUrl = "https://cors-anywhere.herokuapp.com/http://api.musixmatch.com/ws/1.1/track.search?format=json&q_lyrics=" + lyricInput + "&q_track_artist=" + clueInput + "&callback=jsonp&quorum_factor=.06&f_has_lyrics=1&s_track_rating=desc&apikey=2ff458e3e36ac3751209b898369ec5bd"
+    $("#art-show").val("")
 
 
     $.ajax({
         url: baseUrl,
         method: "GET",
-    }).then(function(response){
+    }).then(function (response) {
         let parsed = JSON.parse(response);
         let obj = parsed.message.body;
-        for(let i = 0; i <obj.track_list.length; i++){
-            var  newDiv = $("<div>");
+        for (let i = 0; i < obj.track_list.length; i++) {
+            var newDiv = $("<div>");
             newDiv.append(
-            newDiv.append(
-                $("<ul>"),
-                $("<p>").text("Track Name: " + obj.track_list[i].track.track_name),
-                $("<li>").text("Track Name: " + obj.track_list[i].track.track_name),
-                $("<p>").text("Artist Name: " + obj.track_list[i].track.artist_name),
-                $("<li>").text("Artist Name: " + obj.track_list[i].track.artist_name),
-                $("</ul>")
-            )
+                newDiv.append(
+                    $("<ul>"),
+                    $("<p>").text("Track Name: " + obj.track_list[i].track.track_name),
+                    $("<li>").text("Track Name: " + obj.track_list[i].track.track_name),
+                    $("<p>").text("Artist Name: " + obj.track_list[i].track.artist_name),
+                    $("<li>").text("Artist Name: " + obj.track_list[i].track.artist_name),
+                    $("</ul>")
+                )
             )
             newDiv.addClass("output");
             $("#searchDump").append(newDiv)
+
         }
+
         console.log(obj);
     })
+
+
     console.log(searchInput);
 })
 
