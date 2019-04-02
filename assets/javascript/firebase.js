@@ -25,3 +25,13 @@ var config = {
 
 
    };
+    
+    database.ref().push(signIn);
+
+   console.log(signIn.email);
+   console.log(signIn.password);
+
+   $("#username").val("");
+   $("#password-input").val("");
+
+   });
