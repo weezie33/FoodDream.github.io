@@ -1,10 +1,10 @@
-# Lyricist.github.io
+# Lyricist
 
-Lyricist is an innovative way to find music by lyrics you know. By simiply searching for your lyrics you will get artists that have songs assoicated with the search criteria. 
+Lyricist is an innovative way to find music by lyrics you know. By simply searching for your lyrics you will get artists that have songs associated with the search criteria. 
 
-Lyricist leverages two APIs:
+Lyricist leverages two ###APIs:
   <ul>
-  <ls>MusiXmatch</ls>
-  <ls>Napster API</ls>
-  </ul>
-New Technology: Handlebar.js
+  *MusiXmatch
+  *Napster API
+  </ul>  
+And has incorporatewd Handlebar.js as a new technology for lyric searches. 
