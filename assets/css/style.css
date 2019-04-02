@@ -287,3 +287,11 @@ hr {
   margin-bottom: 0px;
 
 }
+.track {
+  color: chartreuse;
+  font-weight: 500;
+}
+.artist {
+
+  color: skyblue ;
+}

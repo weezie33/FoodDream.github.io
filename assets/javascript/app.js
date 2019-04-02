@@ -20,8 +20,9 @@ $("#add-music").on("click", function (event) {
             var newDiv = $("<div>");
             newDiv.append(
                 newDiv.append(
-                    $("<p>").text("Track Name: " + obj.track_list[i].track.track_name),
-                    $("<p>").text("Artist Name: " + obj.track_list[i].track.artist_name),
+                    $("<p>").addClass("track").text(  obj.track_list[i].track.track_name),
+                    $("<p>").addClass("artist").text("Artist : " + obj.track_list[i].track.artist_name),
+                    
                 )
             )
             newDiv.addClass("output");
