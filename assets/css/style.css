@@ -292,6 +292,16 @@ hr {
   font-weight: 500;
 }
 .artist {
-
   color: skyblue ;
+}
+.favorite {
+  background: center;
+  border: 0px;
+  margin-top: 6%;
+  margin-right: -77%;
+  font-size: 20px;
+}
+#lastplayed {
+
+
 }

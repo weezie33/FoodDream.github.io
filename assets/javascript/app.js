@@ -1,5 +1,6 @@
 // initial testing
 let apikey = "&apikey=2ff458e3e36ac3751209b898369ec5bd";
+var favplaylist = [];
 
 $("#add-music").on("click", function (event) {
     event.preventDefault();
@@ -20,22 +21,28 @@ $("#add-music").on("click", function (event) {
             var newDiv = $("<div>");
             newDiv.append(
                 newDiv.append(
-                    $("<p>").addClass("track").text(  obj.track_list[i].track.track_name),
+                    $("<p>").addClass("track").text(obj.track_list[i].track.track_name),
                     $("<p>").addClass("artist").text("Artist : " + obj.track_list[i].track.artist_name),
-                    
+                    $("<button>").addClass("favorite").text( "💜").on(" click", function () {
+                    var lastplayed = $ ("<div>")
+                        favplaylist.push( "<p>"+ "track: " + obj.track_list[i].track.track_name + ", artist: "+ obj.track_list[i].track.artist_name)
+                        console.log( "favplaylist" + obj.track_list[i].track.track_name    )
+                        $("#lastplayed").html("Tracks played so far: " + "<p>" + favplaylist )
+                    }   )
                 )
             )
             newDiv.addClass("output");
             newDiv.attr("track", obj.track_list[i].track.track_name)
             newDiv.attr("artist", obj.track_list[i].track.artist_name)
             $("#searchDump").append(newDiv)
-
-
         }
-
     })
-
 })
+
+
+
+
+
 
 
 const tracksTemplateSource = document.getElementById('tracks-template').innerHTML;
