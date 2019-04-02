@@ -277,7 +277,7 @@ hr {
 
 .push {
   height: 0px;
-  margin-top: 50px;
+
 }
 
 .footer-copyright {
@@ -299,6 +299,17 @@ hr {
 
   color: skyblue ;
 }
+
+.favorite {
+  background: center;
+  border: 0px;
+  margin-top: 6%;
+  margin-right: -77%;
+  font-size: 20px;
+}
+#lastplayed {
+ } 
+
 .full-width{
   width:100%;
 }
@@ -307,3 +318,5 @@ hr {
   margin-left: auto !important;
   margin-right: auto !important;
 }
+
+
