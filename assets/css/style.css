@@ -101,6 +101,11 @@ hr {
   height: 4px;
 }
 
+#hr { 
+  width: 90%;
+  height: 1px;
+}
+
 
 /* off canvas sidebar */
 @media screen and (max-width: 34em) {
@@ -295,8 +300,7 @@ hr {
   font-weight: 500;
 }
 .artist {
-
-  color: skyblue ;
+  color: #2d87ee;
 }
 
 .favorite {
@@ -305,9 +309,24 @@ hr {
   margin-top: 6%;
   margin-right: -77%;
   font-size: 20px;
+  font: bold;
+  color: #2d87ee;
 }
-/* #lastplayed {
- }  */
+
+.button.favorite {
+  float: right;
+  margin-bottom: 0px;
+  position: fixed;
+}
+
+
+#lastplayed {
+  color: #2d87ee;
+  text-align: center;
+}
+p {
+  color:#f2f2f2;
+}
 
 .full-width{
   width:100%;

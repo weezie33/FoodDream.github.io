@@ -22,12 +22,12 @@ $("#add-music").on("click", function (event) {
             newDiv.append(
                 newDiv.append(
                 $("<p>").addClass("track").text(obj.track_list[i].track.track_name),
-                    $("<p>").addClass("artist").text("Artist : " + obj.track_list[i].track.artist_name),
-                     $("<button>").addClass("favorite").text( "💜").on(" click", function () {
+                    $("<p>").addClass("artist").text("Artist: " + obj.track_list[i].track.artist_name),
+                     $("<button>").addClass("favorite").text( "💜").on("click", function () {
                     var lastplayed = $ ("<div>")
                         favplaylist.push( "<p>"+ "track: " + obj.track_list[i].track.track_name + ", artist: "+ obj.track_list[i].track.artist_name)
                         console.log( "favplaylist" + obj.track_list[i].track.track_name    )
-                        $("#lastplayed").html("Tracks played so far: " + "<p>" + favplaylist )
+                        $("#lastplayed").html("Liked Tracks" + ("<p>" + favplaylist))
                     }   )
                 )
             )
