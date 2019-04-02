@@ -5,7 +5,6 @@ Lyricist is an innovative way to find music by lyrics you know. By simply search
 Lyricist leverages two APIs:
   * [MusiXmatch](https://developer.musixmatch.com/)
   * [Napster API](https://developer.napster.com/)
- <br>
  And has incorporatewd Handlebar.js as a new technology for lyric searches.
 
 ## How it works
