@@ -6,7 +6,7 @@ Lyricist leverages two APIs:
   * [MusiXmatch](https://developer.musixmatch.com/)
   * [Napster API](https://developer.napster.com/)
   
- And has incorporatewd Handlebar.js as a new technology for lyric searches.
+ And has incorporatewd [Handlebar.js](https://handlebarsjs.com/) as a new technology for lyric searches.
 
 ## How it works
 Lyricist works by entering lyrics into the search bar. If the lyrics match a song(s) is returns the artist and song names. You can then select the song you want to hear which begins the interactive music player.
