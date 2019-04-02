@@ -18,7 +18,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    
     <!-- Custom styles for this template -->
@@ -63,22 +62,22 @@
     <div class="wrapper container-fluid" id="background-image">
         <div class="row row-offcanvas row-offcanvas-left">
             <!-- sidebar -->
-            <div class="col-sm-3 col-xs-1 sidebar-offcanvas" id="sidebar">
+            <div class="col-sm-3  sidebar-offcanvas" id="sidebar">
                 <ul class="nav nav-stacked" id="menu">
                     <ls class="nav-item" data-toggle="offcanvas-in"><a class="nav-link" href ="../../../index.html"
                             data-toggle="collapse"><i class="fa fa-home" style="color: #2d87ee"></i> <span
                                 class="collapse in hidden-xs-down"> Home <span class="caret"></span></span></a>
                     </ls>
-                    <li class="nav-item"><a class="nav-link" href="../sidebar/sidebar/music.html"><i
+                    <li class="nav-item"><a class="nav-link" href="../sidebar/music.html"><i
                                 class="fa fa-music" style="color: #2d87ee"></i> <span
                                 class="collapse in hidden-xs-down"> Music</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="../sidebar/sidebar/lyrics.html"><i
+                    <li class="nav-item"><a class="nav-link" href="../sidebar/lyrics.html"><i
                                 class=" fa fa-fire" style="color: #2d87ee" style="color: #2d87ee"></i> <span
                                 class="collapse in hidden-xs-down"> Lyrics</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="../sidebar/sidebar/favorites.html"><i
+                    <li class="nav-item"><a class="nav-link" href="../sidebar/favorites.html"><i
                                 class="fa fa-heart" style="color: #2d87ee"></i><span class="collapse in hidden-xs-down">
                                 Favorites</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="../sidebar/sidebar/playlist.html"><i
+                    <li class="nav-item"><a class="nav-link" href="../sidebar/playlist.html"><i
                                 class="fa fa-th-list" style="color: #2d87ee"></i><span
                                 class="collapse in hidden-xs-down"> Playlist</span></a></li>
                 </ul>
@@ -86,9 +85,10 @@
             <!-- END sidebar -->
 
             <!-- Start main -->
-            <div class="container" >
-                <form class="well form-horizontal" action=" " method="post"  id="contact_form" style="background:transparent; border:transparent; margin-top: 25px" >
-                <fieldset>
+            <div class="col-sm-9 col-6" >
+
+                <form class="row justify-content-center"  id="contact_form" style="background:transparent; border:transparent; margin-top: 25px" >
+                <fieldset class="col-sm-6">
 
                 <!-- Form Name -->
                 <legend style="color:#f2f2f2; font: 50px">Contact Us Today!</legend>
@@ -96,8 +96,8 @@
                 <!-- Text input-->
 
                 <div class="form-group">
-                    <label class="col-md-4 control-label">First Name</label>  
-                    <div class="col-md-4 inputGroupContainer">
+                    <label class=" control-label">First Name</label>  
+                    <div class=" inputGroupContainer">
                     <div class="input-group">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
                         <input  name="first_name" placeholder="First Name" class="form-control"  type="text">
@@ -108,8 +108,8 @@
                 <!-- Text input-->
 
                 <div class="form-group">
-                    <label class="col-md-4 control-label" >Last Name</label> 
-                    <div class="col-md-4 inputGroupContainer">
+                    <label class="control-label" >Last Name</label> 
+                    <div class="inputGroupContainer">
                         <div class="input-group">
                             <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
                             <input name="last_name" placeholder="Last Name" class="form-control"  type="text">
@@ -119,8 +119,8 @@
 
                 <!-- Text input-->
                 <div class="form-group">
-                    <label class="col-md-4 control-label">E-Mail</label>  
-                        <div class="col-md-4 inputGroupContainer">
+                    <label class=" control-label">E-Mail</label>  
+                        <div class=" inputGroupContainer">
                         <div class="input-group">
                             <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
                     <input name="email" placeholder="E-Mail Address" class="form-control"  type="text">
@@ -132,8 +132,8 @@
                 <!-- Text input-->
                     
                 <div class="form-group">
-                    <label class="col-md-4 control-label">Phone #</label>  
-                        <div class="col-md-4 inputGroupContainer">
+                    <label class=" control-label">Phone #</label>  
+                        <div class=" inputGroupContainer">
                         <div class="input-group">
                             <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
                     <input name="phone" placeholder="(111)111-1111" class="form-control" type="text">
@@ -144,8 +144,8 @@
                 <!-- Text input-->
                     
                 <div class="form-group">
-                    <label class="col-md-4 control-label">Address</label>  
-                        <div class="col-md-4 inputGroupContainer">
+                    <label class=" control-label">Address</label>  
+                        <div class=" inputGroupContainer">
                         <div class="input-group">
                             <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
                             <input name="address" placeholder="Address" class="form-control" type="text">
@@ -156,8 +156,8 @@
                 <!-- Text input-->
                 
                 <div class="form-group">
-                <label class="col-md-4 control-label">City</label>  
-                    <div class="col-md-4 inputGroupContainer">
+                <label class=" control-label">City</label>  
+                    <div class=" inputGroupContainer">
                     <div class="input-group">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
                 <input name="city" placeholder="city" class="form-control"  type="text">
@@ -168,8 +168,8 @@
                 <!-- Select Basic -->
                 
                 <div class="form-group"> 
-                <label class="col-md-4 control-label">State</label>
-                    <div class="col-md-4 selectContainer">
+                <label class=" control-label">State</label>
+                    <div class=" selectContainer">
                     <div class="input-group">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
                     <select name="state" class="form-control selectpicker" >
@@ -233,8 +233,8 @@
                 <!-- Text input-->
 
                 <div class="form-group">
-                <label class="col-md-4 control-label">Zip Code</label>  
-                    <div class="col-md-4 inputGroupContainer">
+                <label class=" control-label">Zip Code</label>  
+                    <div class=" inputGroupContainer">
                     <div class="input-group">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
                 <input name="zip" placeholder="Zip Code" class="form-control"  type="text">
@@ -242,42 +242,16 @@
                 </div>
                 </div>
 
-                <!-- Text input-->
-                <div class="form-group">
-                <label class="col-md-4 control-label">Website or domain name</label>  
-                <div class="col-md-4 inputGroupContainer">
-                    <div class="input-group">
-                        <span class="input-group-addon"><i class="glyphicon glyphicon-globe"></i></span>
-                <input name="website" placeholder="Website or domain name" class="form-control" type="text">
-                    </div>
-                </div>
-                </div>
-
-                <!-- radio checks -->
-                <div class="form-group">
-                                        <label class="col-md-4 control-label">Do you have hosting?</label>
-                                        <div class="col-md-4">
-                                            <div class="radio">
-                                                <label>
-                                                    <input type="radio" name="hosting" value="yes" /> Yes
-                                                </label>
-                                            </div>
-                                            <div class="radio">
-                                                <label>
-                                                    <input type="radio" name="hosting" value="no" /> No
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-
+               
+                
                 <!-- Text area -->
                 
                 <div class="form-group">
-                <label class="col-md-4 control-label">Project Description</label>
-                    <div class="col-md-4 inputGroupContainer">
+                <label class=" control-label">Comment</label>
+                    <div class=" inputGroupContainer">
                     <div class="input-group">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
-                            <textarea class="form-control" name="comment" placeholder="Project Description"></textarea>
+                            <textarea class="form-control" name="comment" placeholder="Comment"></textarea>
                 </div>
                 </div>
                 </div>
@@ -287,16 +261,17 @@
 
                 <!-- Button -->
                 <div class="form-group">
-                <label class="col-md-4 control-label"></label>
-                <div class="col-md-4">
+                <label class=" control-label"></label>
+                <div class="">
                     <button type="submit" class="btn btn-warning" >Send <span class="glyphicon glyphicon-send"></span></button>
                 </div>
                 </div>
 
                 </fieldset>
                 </form>
-            </div>
+        
             <!-- END main -->
+            
         </div>        
         <div class="push" style="color: transparent"></div>
     </div>
@@ -317,135 +292,8 @@
     
     <!-- Handlebar.js Reference -->
     
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.1/handlebars.min.js"></script>
-    <script src="header/html/assets/javascript/app.js"></script>
     <script src="header/html/javascript/mobilefirst.js"></script>
-    <script src="header/html/javascript/3dcode.js"></script>
 
-<script>
-$(document).ready(function() {
-    $('#contact_form').bootstrapValidator({
-        // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later
-        feedbackIcons: {
-            valid: 'glyphicon glyphicon-ok',
-            invalid: 'glyphicon glyphicon-remove',
-            validating: 'glyphicon glyphicon-refresh'
-        },
-        fields: {
-            first_name: {
-                validators: {
-                        stringLength: {
-                        min: 2,
-                    },
-                        notEmpty: {
-                        message: 'Please supply your first name'
-                    }
-                }
-            },
-             last_name: {
-                validators: {
-                     stringLength: {
-                        min: 2,
-                    },
-                    notEmpty: {
-                        message: 'Please supply your last name'
-                    }
-                }
-            },
-            email: {
-                validators: {
-                    notEmpty: {
-                        message: 'Please supply your email address'
-                    },
-                    emailAddress: {
-                        message: 'Please supply a valid email address'
-                    }
-                }
-            },
-            phone: {
-                validators: {
-                    notEmpty: {
-                        message: 'Please supply your phone number'
-                    },
-                    phone: {
-                        country: 'US',
-                        message: 'Please supply a vaild phone number with area code'
-                    }
-                }
-            },
-            address: {
-                validators: {
-                     stringLength: {
-                        min: 8,
-                    },
-                    notEmpty: {
-                        message: 'Please supply your street address'
-                    }
-                }
-            },
-            city: {
-                validators: {
-                     stringLength: {
-                        min: 4,
-                    },
-                    notEmpty: {
-                        message: 'Please supply your city'
-                    }
-                }
-            },
-            state: {
-                validators: {
-                    notEmpty: {
-                        message: 'Please select your state'
-                    }
-                }
-            },
-            zip: {
-                validators: {
-                    notEmpty: {
-                        message: 'Please supply your zip code'
-                    },
-                    zipCode: {
-                        country: 'US',
-                        message: 'Please supply a vaild zip code'
-                    }
-                }
-            },
-            comment: {
-                validators: {
-                      stringLength: {
-                        min: 10,
-                        max: 200,
-                        message:'Please enter at least 10 characters and no more than 200'
-                    },
-                    notEmpty: {
-                        message: 'Please supply a description of your project'
-                    }
-                    }
-                }
-            }
-        })
-        .on('success.form.bv', function(e) {
-            $('#success_message').slideDown({ opacity: "show" }, "slow") // Do something ...
-                $('#contact_form').data('bootstrapValidator').resetForm();
-
-            // Prevent form submission
-            e.preventDefault();
-
-            // Get the form instance
-            var $form = $(e.target);
-
-            // Get the BootstrapValidator instance
-            var bv = $form.data('bootstrapValidator');
-
-            // Use Ajax to submit form data
-            $.post($form.attr('action'), $form.serialize(), function(result) {
-                console.log(result);
-            }, 'json');
-        });
-});
-
-</script>
     <!-- END JS -->
 </body>
 <!-- END Body -->
