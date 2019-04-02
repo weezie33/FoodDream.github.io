@@ -1,6 +1,6 @@
 
-body {
-   /* min-height: 100%; */
+html, body {
+   height: 100%;
    margin: 0;
    width: 100%;
    background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
@@ -25,13 +25,14 @@ body {
     margin-left:0;
     margin-right:0;
     height: 100%;
+
 }
 
 #sidebar {
     background: radial-gradient(ellipse farthest-corner at center center, rgba(0,0,0,0.5) 20%, rgba(0,0,0,0.85) 100%) repeat scroll 0% 0%;
     max-width: 200px; 
     height: auto;
-    max-height: auto;
+    max-height: 100%;
     padding: 15px;
     overflow: auto;
     -webkit-transition: width 0.3s ease-in;
@@ -276,15 +277,18 @@ hr {
 
 .push {
   height: 0px;
+  margin-top: 50px;
 }
 
 .footer-copyright {
-  position: relative;
+  position: fixed;
+  width: 100%;
   bottom: 0;
   clear: both;
   font-size: 12px;
   height: 75px;
   margin-bottom: 0px;
+  margin-top: 0px;
 
 }
 .track {
