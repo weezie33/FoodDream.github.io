@@ -13,7 +13,7 @@ Lyricist works by entering lyrics into the search bar. If the lyrics match a son
   * Lyricist utilizes the following methods: html, CSS, Javascript, jQuery, Firebase
 
 ## Contributors
-  * Dmitrii Prokofev] or1979
-  * Orran Robinson
-  * Bryan Villatoro
+  * [Dmitrii Prokofev](https://github.com/dmitp888/)
+  * [Orran Robinson](https://github.com/or1979/)
+  * [Bryan Villatoro](https://github.com/b-villatoro/)
   * [Corey Webeck](https://github.com/weezie33/)
