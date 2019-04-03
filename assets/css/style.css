@@ -239,7 +239,7 @@ hr {
 #searchDump {
     align-content: center;
     margin: auto;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
     padding: 5px;
     display: flex;
     flex-direction: row;
