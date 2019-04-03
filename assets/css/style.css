@@ -31,8 +31,6 @@ html, body {
 #sidebar {
     background: radial-gradient(ellipse farthest-corner at center center, rgba(0,0,0,0.5) 20%, rgba(0,0,0,0.85) 100%) repeat scroll 0% 0%;
     max-width: 200px; 
-    height: auto;
-    max-height: 100%;
     padding: 15px;
     overflow: auto;
     -webkit-transition: width 0.3s ease-in;
@@ -241,6 +239,7 @@ hr {
 #searchDump {
     align-content: center;
     margin: auto;
+    margin-bottom: 50px;
     padding: 5px;
     display: flex;
     flex-direction: row;
@@ -315,8 +314,8 @@ hr {
 
 .button.favorite {
   float: right;
-  margin-bottom: 0px;
-  position: fixed;
+  right: 0px;
+  bottom: 0px;
 }
 
 
@@ -337,4 +336,12 @@ p {
   margin-right: auto !important;
 }
 
+.cover {
+    outline: none;
+    border: 3px solid transparent; 
+    /* create a BIG glow */
+    box-shadow: 0px 0px 20px 10px #15ff00;
+    -moz-box-shadow: 0px 0px 20px 10px #15ff00;
+    -webkit-box-shadow: 0px 0px 20px 10px #15ff00;
+}
 
