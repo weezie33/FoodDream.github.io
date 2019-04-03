@@ -312,10 +312,12 @@ hr {
   color: #2d87ee;
 }
 
-.button.favorite {
-  float: right;
-  right: 0px;
-  bottom: 0px;
+.favorite {
+  width:10%;
+  margin: auto;
+  /* right: -10px;
+  bottom: 10px; */
+
 }
 
 
@@ -323,6 +325,7 @@ hr {
   color: #2d87ee;
   text-align: center;
 }
+
 p {
   color:#f2f2f2;
 }
