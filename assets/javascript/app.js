@@ -117,9 +117,4 @@ $(document).on("click", ".output", function () {
     let trackId = $(this).attr("trId");
     firstCall(track, artist);
     showLyrics(trackId);
-})
-// $(document).on("click", ".output", function () {
-//     let track = $(this).attr("track");
-//     let artist = $(this).attr("artist");
-//     firstCall(track, artist);
-// })
+}) 
