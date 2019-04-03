@@ -21,7 +21,7 @@ $("#add-music").on("click", function (event) {
             var newDiv = $("<div>");
             newDiv.append(
                 newDiv.append(
-                $("<p>").addClass("track").text(obj.track_list[i].track.track_name),
+                    $("<p>").addClass("track").text(obj.track_list[i].track.track_name),
                     $("<p>").addClass("artist").text("Artist: " + obj.track_list[i].track.artist_name),
                      $("<button>").addClass("favorite").text( "💜").on("click", function () {
                     var lastplayed = $ ("<div>")
@@ -39,7 +39,7 @@ $("#add-music").on("click", function (event) {
             $("#searchDump").append(newDiv)
 
 
-	        }
+        }
 
     })
 
@@ -118,8 +118,3 @@ $(document).on("click", ".output", function () {
     firstCall(track, artist);
     showLyrics(trackId);
 })
-// $(document).on("click", ".output", function () {
-//     let track = $(this).attr("track");
-//     let artist = $(this).attr("artist");
-//     firstCall(track, artist);
-// })
